@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notib12345-provenance"
+version = "0.1.0"
+description = "沿导入链记录每份数据的来源、许可与获取时间"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "notib12345" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://notib12345.github.io"
+Repository = "https://github.com/notib12345/provenance"
+Issues = "https://github.com/notib12345/provenance/issues"
+
+[project.scripts]
+provenance = "provenance:main"
+
+[tool.setuptools]
+py-modules = ["provenance"]
